@@ -11,9 +11,9 @@
         <flyway.version>3.2.1</flyway.version>
         <mysql.driver.version>5.1.13</mysql.driver.version>
         <database.driver>com.mysql.jdbc.Driver</database.driver>
-        <database.url>jdbc:mysql://localhost:3306/customer_dev?autoreconnect=true</database.url>
-        <database.username>admin</database.username>
-        <database.password>p@ssw0rd</database.password>
+        <database.url>jdbc:mysql://10.34.109.65:3306/test?autoreconnect=true</database.url>
+        <database.username>devuser</database.username>
+        <database.password>changeme</database.password>
     </properties>
 
     <dependencies>
@@ -42,10 +42,10 @@
                     <user>${database.username}</user>
                     <password>${database.password}</password>
                     <schemas>
-                        <schema>customer_dev</schema>
+                        <schema>test</schema>
                     </schemas>
                     <locations>
-                        <location>sql/migrations</location>
+                        <location>src/main/resources/sql/migrations</location>
                     </locations>
                     <encoding>ISO-8859-1</encoding>
                     <cleanOnValidationError>true</cleanOnValidationError>
